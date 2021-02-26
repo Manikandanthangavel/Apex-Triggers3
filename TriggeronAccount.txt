@@ -1,0 +1,6 @@
+trigger mas on Account (After insert) 
+{
+    
+    fijoy.zzz(Trigger.new);
+  
+}

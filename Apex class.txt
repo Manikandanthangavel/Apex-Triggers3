@@ -1,0 +1,43 @@
+public class fijoy {
+public static void zzz(List<Account> accList)
+{
+   List<Id> ct = new List<Id>();
+    List<Account> en= new List<Account>();
+            map<Id, Boolean> ObjMap = new map<Id, Boolean>();
+		List<Contact> conList = new List<Contact>();
+		for(Account acc : accList) {
+			  Contact con = new Contact(AccountId = acc.Id,FirstName='info',LastName='Default',Email ='info@websitedomain.tld');
+            conList.add(con);
+            if(conList.size() > 0){
+    
+                ObjMap.put(acc.Id, acc.Only__c);
+        }
+            insert conList;
+       for(Id id: ObjMap.keyset())
+       {
+              Boolean b = ObjMap.get(id);
+               b=true;
+             Account cn = new Account(Id=id,Only__c=b);
+           en.add(cn);
+        }
+            update en;
+}
+}
+    public static void yyy(List<Contact> coli)
+    {
+   List<Account> vwon= new List<Account>();
+         Set<Id> tn= new Set<Id>();
+   
+        for(Contact xx: coli)
+        {
+            tn.add(xx.AccountId);
+        }
+      for(Id oi : tn)
+        {
+              
+             Account bn = new Account(Id=oi,Only__c=false);
+           vwon.add(bn);
+        }
+            update vwon;
+    }
+}

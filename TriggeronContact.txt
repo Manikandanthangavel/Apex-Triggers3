@@ -1,0 +1,4 @@
+trigger won on Contact (after insert) 
+{
+fijoy.yyy(Trigger.new);
+}

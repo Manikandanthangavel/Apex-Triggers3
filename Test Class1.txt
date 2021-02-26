@@ -1,0 +1,29 @@
+@isTest
+public class ThirdTestClass {
+@isTest
+     public static void testHandler(){
+        Account ac = new Account();
+        ac.name='mahesh';
+        insert ac;
+        id acntid = ac.id;
+      Contact df = new Contact();
+       df.Salutation='mr';
+        df.FirstName='Info';
+        df.LastName='Default';
+         df.Email='info@websitedomain.tid';
+        df.AccountId=acntid;
+      insert df;
+          Contact f = new Contact();
+       f.Salutation='mr';
+        f.FirstName='i';
+        f.LastName='Deft';
+         f.Email='ino@websain.tid';
+        f.AccountId=acntid;
+      insert f;
+         Test.startTest();        
+     Account at = [SELECT Id, a.Only__c FROM Account a WHERE a.Id =: acntid ];
+         System.debug(at.Only__c);
+        System.assertequals(False,at.Only__c );
+         Test.stopTest();
+    }
+}
